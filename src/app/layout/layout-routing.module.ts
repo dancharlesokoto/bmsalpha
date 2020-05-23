@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
+import { ViewAdminsComponent } from '../view-admins/view-admins.component';
+import { ViewUsersComponent } from '../view-users/view-users.component';
+import { AddUserComponent } from '../add-user/add-user.component';
+import { AddSubadminsComponent } from '../add-subadmins/add-subadmins.component';
+import { TopupSubadminComponent } from '../topup-subadmin/topup-subadmin.component';
+import { TopupUserComponent } from '../topup-user/topup-user.component';
+import { TopupHistoryComponent } from '../topup-history/topup-history.component';
 
 const routes: Routes = [
     {
@@ -12,21 +19,41 @@ const routes: Routes = [
                 path: 'dashboard',
                 loadChildren: () => import('./dashboard/dashboard.module').then((m) => m.DashboardModule)
             },
-            { path: 'charts', loadChildren: () => import('./charts/charts.module').then((m) => m.ChartsModule) },
-            { path: 'tables', loadChildren: () => import('./tables/tables.module').then((m) => m.TablesModule) },
-            { path: 'forms', loadChildren: () => import('./form/form.module').then((m) => m.FormModule) },
-            {
-                path: 'bs-element',
-                loadChildren: () => import('./bs-element/bs-element.module').then((m) => m.BsElementModule)
-            },
-            { path: 'grid', loadChildren: () => import('./grid/grid.module').then((m) => m.GridModule) },
-            {
+             {
                 path: 'components',
                 loadChildren: () => import('./bs-component/bs-component.module').then((m) => m.BsComponentModule)
             },
+            
             {
-                path: 'blank-page',
-                loadChildren: () => import('./blank-page/blank-page.module').then((m) => m.BlankPageModule)
+                path: 'view-admins',
+                component: ViewAdminsComponent
+            }
+            ,
+            {
+                path: 'view-users',
+                component: ViewUsersComponent
+            },
+            {
+                path: 'add-user',
+                component: AddUserComponent
+            },
+            {
+                path: 'add-subadmins',
+                component: AddSubadminsComponent
+            },
+            {
+                path: 'topup-subadmin',
+                component: TopupSubadminComponent
+            }
+            ,
+            {
+                path: 'topup-user',
+                component: TopupUserComponent
+            }
+            ,
+            {
+                path: 'topup-history',
+                component: TopupHistoryComponent
             }
         ]
     }
