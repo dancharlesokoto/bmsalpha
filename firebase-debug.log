@@ -1,0 +1,13 @@
+[debug] [2020-05-24T13:24:17.295Z] ----------------------------------------------------------------------
+[debug] [2020-05-24T13:24:17.298Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-05-24T13:24:17.299Z] CLI Version:   8.4.0
+[debug] [2020-05-24T13:24:17.299Z] Platform:      win32
+[debug] [2020-05-24T13:24:17.299Z] Node Version:  v12.16.3
+[debug] [2020-05-24T13:24:17.301Z] Time:          Sun May 24 2020 14:24:17 GMT+0100 (West Africa Standard Time)
+[debug] [2020-05-24T13:24:17.301Z] ----------------------------------------------------------------------
+[debug] [2020-05-24T13:24:17.301Z] 
+[debug] [2020-05-24T13:24:17.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-24T13:24:17.319Z] > authorizing via signed-in user
+[debug] [2020-05-24T13:24:17.319Z] [iam] checking project balancems for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-05-24T13:24:17.325Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/balancems:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
